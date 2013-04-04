@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/my_spreadsheet_icon.png</file>
+        <file>images/my_spreadsheet_icon_alt.png</file>
+        <file>images/splash.png</file>
+    </qresource>
+</RCC>
