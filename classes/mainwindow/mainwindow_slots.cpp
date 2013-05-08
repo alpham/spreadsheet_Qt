@@ -48,14 +48,15 @@ bool MainWindow::saveAs()
 
 void MainWindow::find()
 {
-    if (!findDialog){
-        findDialog=new FindDialog;
+    if(!findDialog){
+        findDialog=new FindDialog(this);
         connect(findDialog,SIGNAL(findNext(QString,Qt::CaseSensitivity))
                 ,spreadsheet,SLOT(findNext(QString,Qt::CaseSensitivity)));
         connect(findDialog,SIGNAL(findPrev(QString,Qt::CaseSensitivity))
                 ,spreadsheet,SLOT(findPrev(QString,Qt::CaseSensitivity)));
 
     }
+
     findDialog->show();
     findDialog->activateWindow();
 }
@@ -76,10 +77,13 @@ void MainWindow::about()
     QMessageBox::about(this,
                        tr("About Spreadsheet"),
                        tr("<h1>About Spreadsheet :</h1>"
-                          "<p>Copyrihgt &copy; <font color=\"red\"><b>TROSC</b></font> Team.</p>"
-                          "<p>[Ahmed Magdy - ahmed.magdy40@gmail.com]</p>"
-                          "<p>Spreadsheet is a small training program that aims to demostrate "
-                          "the main concepts of Qt library and OpenSource..."));
+                          "<p>Copyrihgt &copy; <font color=\"red\"><b>507</b></font> Team.</p>"
+                          "<p>[Ahmed Magdy - section 1]</p>"
+                          "<p>[Mohamed Ibrahim - section 5]</p>"
+                          "<p>[Mohamed Taha - section 5]</p>"
+                          "<p>[Omar Ahmed El-Kady - section 4]</p>"
+                          "<p>[Ragy Mohamed Shahien - section 3]</p>"
+                          "<p>[Reda Mohamed Salama - section 3]</p>"));
 
 }
 

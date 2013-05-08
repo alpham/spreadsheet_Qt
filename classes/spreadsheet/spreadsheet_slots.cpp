@@ -99,6 +99,7 @@ void Spreadsheet::copy()
 
 void Spreadsheet::findNext(const QString &str, Qt::CaseSensitivity cs)
 {
+//    qDebug() << "find the next result" <<endl;
     int row=currentRow();
     int column = currentColumn()+1;
     while(row<RowCount){
@@ -121,8 +122,9 @@ void Spreadsheet::findNext(const QString &str, Qt::CaseSensitivity cs)
 
 }
 
-void Spreadsheet::fnidPrev(const QString &str, Qt::CaseSensitivity cs)
+void Spreadsheet::findPrev(const QString &str, Qt::CaseSensitivity cs)
 {
+//    qDebug() << "find the previous result" <<endl;
     int row=currentRow();
     int column = currentColumn() - 1;
     while (row>=0) {

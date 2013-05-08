@@ -30,7 +30,7 @@ public slots:
     void recalculate();
     void setAutoRecalculate(bool recalc);
     void findNext(const QString &str , Qt::CaseSensitivity cs);
-    void fnidPrev(const QString &str , Qt::CaseSensitivity cs);
+    void findPrev(const QString &str , Qt::CaseSensitivity cs);
 
 private slots:
     void somethingChanged();

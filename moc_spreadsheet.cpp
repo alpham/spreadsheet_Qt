@@ -54,7 +54,7 @@ static const char qt_meta_stringdata_Spreadsheet[] = {
     "selectCurrentRow()\0recalculate()\0"
     "recalc\0setAutoRecalculate(bool)\0str,cs\0"
     "findNext(QString,Qt::CaseSensitivity)\0"
-    "fnidPrev(QString,Qt::CaseSensitivity)\0"
+    "findPrev(QString,Qt::CaseSensitivity)\0"
     "somethingChanged()\0"
 };
 
@@ -74,7 +74,7 @@ void Spreadsheet::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 7: _t->recalculate(); break;
         case 8: _t->setAutoRecalculate((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 9: _t->findNext((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< Qt::CaseSensitivity(*)>(_a[2]))); break;
-        case 10: _t->fnidPrev((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< Qt::CaseSensitivity(*)>(_a[2]))); break;
+        case 10: _t->findPrev((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< Qt::CaseSensitivity(*)>(_a[2]))); break;
         case 11: _t->somethingChanged(); break;
         default: ;
         }

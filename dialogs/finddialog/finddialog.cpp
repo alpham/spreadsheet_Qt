@@ -1,13 +1,17 @@
 #include "finddialog.h"
 #include "ui_finddialog.h"
 
+
 FindDialog::FindDialog(QWidget *parent) :
     QDialog(parent)
 {
     setupUi(this);
     connect(lineEdit,SIGNAL(textChanged(const QString &)),this,SLOT(enableFindButton(const QString &)));
+    connect(findButton,SIGNAL(clicked()),this,SLOT(findButtonClicked()));
 
 }
+
+
 
 void FindDialog::findButtonClicked()
 {

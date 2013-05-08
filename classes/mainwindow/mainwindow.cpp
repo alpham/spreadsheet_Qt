@@ -16,7 +16,7 @@ MainWindow::MainWindow()
     createStatusBar();
     readSettings();
     findDialog=0;
-    setWindowIcon(QIcon(":/images/my_spreadsheet_icon_alt.png"));
+    setWindowIcon(QIcon(":/images/images/my_spreadsheet_icon.png"));
     setCurrentFile("");
 
 }
